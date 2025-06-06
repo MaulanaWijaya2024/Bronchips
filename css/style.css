@@ -1,0 +1,51 @@
+.font-superlobster {
+  font-family: 'Super Lobster', cursive;
+}
+.font-bevietnam {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+.bg-coklat {
+  background-color: #4B2513;
+}
+.bg-kuning {
+  background-color: #FFD31F;
+}
+.text-coklat {
+  color: #4B2513;
+}
+.text-kuning {
+  color: #FFD31F;
+}
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.glow-button:hover {
+  box-shadow: 0 0 20px rgba(255, 211, 31, 0.8);
+  transform: scale(1.05);
+}
+.section {
+  padding: 4rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.section:hover {
+  background-color: #fff8e1;
+}
+.heading-underline::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #FFD31F;
+  margin: 0.5rem auto 0;
+  border-radius: 4px;
+}
