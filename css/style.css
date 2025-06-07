@@ -49,3 +49,19 @@
   margin: 0.5rem auto 0;
   border-radius: 4px;
 }
+.stroke-text {
+  font-family: 'Lobster', cursive;
+  font-weight: 700;
+  color: #FFD31F; /* kuning */
+  -webkit-text-stroke: 1px #4B2513; /* stroke coklat */
+  text-stroke: 1px #4B2513;
+  text-shadow: 2px 2px 4px #FFD31F; /* shadow kuning */
+}
+.stroke-text-semi {
+  font-family: 'Lobster', cursive;
+  font-weight: 600; /* semi bold */
+  color: #FFD31F; /* kuning */
+  -webkit-text-stroke: 1px #4B2513; /* stroke coklat */
+  text-stroke: 1px #4B2513;
+  text-shadow: 2px 2px 4px #FFD31F; /* shadow kuning */
+}

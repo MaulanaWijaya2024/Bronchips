@@ -38,10 +38,11 @@
       >
       <div class="absolute inset-0 bg-white-200 bg-opacity-10"></div>
       <div class="relative max-w-2xl mx-auto">
-        <h1 class="text-5xl sm:text-6xl md:text-7xl font-superlobster leading-tight text-yellow-300 drop-shadow-lg">
-         <span class="font-bold">Bronchips</span>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl leading-tight stroke-text font-bold">
+          Bronchips
         </h1>
-        <p class="text-xl sm:text-2xl mt-4 text-yellow-300 font-semibold">
+
+        <p class="text-xl sm:text-2xl mt-4 stroke-text-semi">
          Pelopor Keripik Brownies No 1 di Indonesia 
         </p>
         <a
@@ -84,9 +85,9 @@
          Apa itu Bronchips?
         </h2>
         <p class="text-justify leading-snug text-base md:text-lg">
-          Bronchips adalah snack keripik singkong yang diolah dengan bumbu khas rahasia, menghasilkan
-          rasa gurih, renyah, dan menggugah selera. Cocok untuk cemilan sehari-hari atau teman
-          nongkrong.
+          Bronchips adalah pelopor keripik brownies pertama di Indonesia yang terbuat dari bahan alami tepung, bubuk coklat, telur, dan tanpa penggunaan bahan pengawet.
+          Menghasilkan rasa gurih, renyah, dan menggugah selera. Cocok untuk cemilan sehari-hari, Sarapan
+          Sereal, Sebagai pelengkap makanan/minuman, atau teman nongkrong.
         </p>
       </div>
     </section>
@@ -420,6 +421,36 @@
       >
     </p>
     </section>
+  <!-- Tombol Scroll to Top -->
+    <button
+     id="scrollToTopBtn"
+     class="fixed bottom-6 right-6 bg-coklat text-white p-3 rounded-full shadow-lg hover:bg-coklat-dark transition-opacity duration-300 opacity-0 pointer-events-none z-50"
+     aria-label="Scroll to top">
+     <!-- Icon panah ke atas -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+  <!-- Script untuk Scroll ke Atas -->
+    <script>
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+      window.addEventListener('scroll', () => {
+       if (window.scrollY > 300) {
+       scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+       scrollToTopBtn.classList.add('opacity-100');
+      } else {
+      scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+      scrollToTopBtn.classList.remove('opacity-100');
+      }
+     });
+
+     scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+     });
+    </script>
+
 
     <footer class="bg-coklat text-yellow-300 text-center py-4 font-light">
       &copy; 2025 Bronchips. All rights reserved.
