@@ -55,7 +55,7 @@
   color: #FFD31F; /* kuning */
   -webkit-text-stroke: 1px #4B2513; /* stroke coklat */
   text-stroke: 1px #4B2513;
-  text-shadow: 2px 2px 4px #FFD31F; /* shadow kuning */
+  text-shadow: 2px 2px 4px #4B2513; /* shadow kuning */
 }
 .stroke-text-semi {
   font-family: 'Lobster', cursive;
@@ -63,5 +63,5 @@
   color: #FFD31F; /* kuning */
   -webkit-text-stroke: 1px #4B2513; /* stroke coklat */
   text-stroke: 1px #4B2513;
-  text-shadow: 2px 2px 4px #FFD31F; /* shadow kuning */
+  text-shadow: 2px 2px 4px #4B2513; /* shadow kuning */
 }
