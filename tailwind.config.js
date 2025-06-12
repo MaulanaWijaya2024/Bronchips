@@ -13,3 +13,13 @@ module.exports = {
     },
   },
 };
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        kuning: '#FFD31F',
+      },
+    },
+  },
+};
