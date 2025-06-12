@@ -12,7 +12,7 @@
   />   
 </head>
 <body class="bg-white text-gray-800 font-sans scroll-smooth">
-  <main class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+  <main class="w-full px-0">
   <!-- Header -->
     <header
       class="bg-kuning p-4 flex flex-col md:flex-row items-center justify-between shadow-md sticky top-0 z-50 font-bevietnam text-[#4B2513]"
@@ -38,34 +38,31 @@
   <div class="absolute inset-0 bg-white/10"></div>
 
   <!-- Content -->
-  <div class="relative max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center gap-8 z-10 px-4">
+  <div class="relative w-full z-10 max-w-7xl mx-auto px-4 flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-8">
 
-    <!-- Left -->
-    <div class="text-left animate-fade-in-up delay-100">
-      <h1 class="font-superlobster animate-fade-in-up delay-100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight stroke-text font-bold">
-        Bronchips
-      </h1>
-      <p class="font-superlobster animate-fade-in-up delay-100 text-lg sm:text-xl md:text-2xl mt-4 stroke-text-semi">
+    <!-- Left (Teks) -->
+    <div class="flex flex-col items-center text-center md:items-start md:text-left animate-fade-in">
+      <h1 class="font-superlobster text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight stroke-text font-bold">
         Pelopor Keripik Brownies No 1 di Indonesia
-      </p>
+      </h1>
 
       <!-- CTA Button -->
-      <div class="mt-6 animate-fade-in delay-500">
+      <div class="mt-6">
         <a
           href="https://wa.me/628992181714"
           target="_blank"
-          class="bg-coklat text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold hover:opacity-90 glow-button transition-all shadow-lg">
+          class="bg-coklat text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold hover:opacity-90 glow-button transition-all shadow-lg animate-fade-in">
           Gabung Reseller
         </a>
       </div>
     </div>
 
-    <!-- Right -->
-    <div class="flex justify-center md:justify-end animate-fade-in-up delay-300">
+    <!-- Right (Gambar) -->
+    <div class="flex justify-center md:justify-end animate-fade-in">
       <img
         src="assets/foto-orang.png"
         alt="Foto Seseorang"
-        class="w-40 sm:w-56 md:w-72 lg:w-[24rem] xl:w-[26rem] max-w-full h-auto animate-fade-in"
+        class="w-40 sm:w-56 md:w-72 lg:w-[24rem] xl:w-[26rem] max-w-full h-auto"
       />
     </div>
   </div>
@@ -84,12 +81,12 @@
           <img
           src="assets/foto-model.png"
           alt="Foto Model"
-          class="w-64 sm:w-72 md:w-80 lg:w-96 rounded-xl shadow-lg animate-fade-in-up"
+          class="w-64 sm:w-72 md:w-80 lg:w-96 rounded-none shadow-none animate-fade-in-up"
         />
         </div>
 
        <!-- Right Text List -->
-        <div class="font-bevietnam md:w-1/2 text-gray-800 text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose tracking-normal md:tracking-wide">
+        <div class="font-bevietnam md:w-1/2 text-coklat text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose tracking-normal md:tracking-wide md:mt-20">
           <ul class="list-disc list-inside space-y-4">
             <li>Teman-teman bisa memiliki uang jajan tambahan setiap bulan.</li>
             <li>Meski masih sekolah atau kuliah, mereka mampu membeli berbagai kebutuhan sendiri.</li>
@@ -173,7 +170,7 @@
 
         <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
          <!-- Left Text -->
-            <div class="w-full md:w-1/2 text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose tracking-normal md:tracking-wide text-justify">
+            <div class="w-full md:w-1/2 text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose tracking-normal md:tracking-wide text-justify md:mt-16">
               <p>
                <strong>Bronchips</strong> adalah pelopor keripik brownies pertama di Indonesia yang terbuat dari bahan alami seperti tepung, bubuk coklat, telur, dan tanpa penggunaan bahan pengawet.
               </p>
@@ -187,7 +184,7 @@
               <img
                src="assets/foto-model2.png"
                alt="Foto Model Bronchips"
-               class="w-64 sm:w-72 md:w-80 lg:w-96 rounded-xl shadow-lg animate-fade-in-up"
+               class="w-64 sm:w-72 md:w-80 lg:w-96 rounded-none shadow-none animate-fade-in-up"
               />
            </div>
         </div>
@@ -200,16 +197,16 @@
   <div class="md:hidden block">
     <img src="assets/foto-reseller-kanan.png"
          alt="Foto Kanan"
-         class="w-28 absolute top-4 right-4 z-10 rounded-xl shadow-md" />
+         class="w-28 absolute top-4 right-4 z-10 rounded-none shadow-none animate-fade-in" />
     <img src="assets/foto-reseller-kiri.png"
          alt="Foto Kiri"
-         class="w-28 absolute bottom-4 left-4 z-10 rounded-xl shadow-md" />
+         class="w-28 absolute bottom-4 left-4 z-10 rounded-none shadow-none animate-fade-in" />
   </div>
 
-  <div class="flex items-center justify-between w-full h-full relative">
+  <div class="flex items-center justify-between w-full h-full relative animate-fade-in">
     <!-- Left Image (Desktop only) -->
-    <div class="w-1/4 hidden md:block animate-fade-in-left">
-      <img src="assets/foto-reseller-kiri.png" alt="Foto Kiri" class="h-full object-cover w-full rounded-xl shadow-lg" />
+    <div class="w-1/3 hidden md:block animate-fade-in">
+      <img src="assets/foto-reseller-kiri.png" alt="Foto Kiri" class="h-full object-cover w-full rounded-none shadow-none" />
     </div>
 
     <!-- Center Content -->
@@ -233,8 +230,9 @@
     </div>
 
     <!-- Right Image (Desktop only) -->
-    <div class="w-1/4 hidden md:block animate-fade-in-right">
-      <img src="assets/foto-reseller-kanan.png" alt="Foto Kanan" class="h-full object-cover w-full rounded-xl shadow-lg" />
+    <div class="w-1/3 hidden md:block animate-fade-in">
+      <img src="assets/foto-reseller-kanan.png" alt="Foto Kanan" 
+        class="h-full object-cover w-full rounded-none shadow-none" />
     </div>
   </div>
    </section>
@@ -345,7 +343,7 @@
           <img
            src="assets/foto-harga-reseller.png"
            alt="Model Harga Reseller"
-           class="w-72 sm:w-80 md:w-96 rounded-xl shadow-lg animate-fade-in-up"
+           class="w-72 sm:w-80 md:w-96 rounded-none shadow-none animate-fade-in-up"
           />
         </div>
 
@@ -386,11 +384,7 @@
 
       <!-- Kanan: Gambar Map -->
         <div class="w-full md:w-1/2 flex justify-center">
-          <img
-            src="assets/map.png"
-            alt="Peta Lokasi"
-            class="w-full max-w-md rounded-xl shadow-lg animate-fade-in-up"
-          />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3883372922955!2d112.67555469999999!3d-7.3101962999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fd27bc4bd62d%3A0xeddcd355ff4954f3!2sBronchips%20keripik%20brownies!5e0!3m2!1sen!2sid!4v1749687448560!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>
       </div>
@@ -560,7 +554,7 @@
     </section>
 
   <!-- Legalitas -->
-   <section class="section animate-fade-in bg-white bg-opacity-30 text-coklat"id="legalitas">
+    <section class="section animate-fade-in bg-white bg-opacity-30 text-coklat"id="legalitas">
     <div class="max-w-4xl mx-auto text-center">
       <h2
         class="text-3xl font-bold mb-6 font-bevietnam text-coklat heading-underline"
@@ -582,10 +576,10 @@
         </div>
       </div>
     </div>
-   </section>
+    </section>
 
   <!-- Kontak & Sosial Media -->
-   <section
+    <section
     id="kontak"
     class="section bg-kuning bg-opacity-30 animate-fade-in text-coklat text-center"
     >
@@ -628,7 +622,7 @@
         >Chat Sekarang</a
       >
     </p>
-   </section>
+    </section>
 
   <!-- Tombol Scroll to Top -->
     <button
