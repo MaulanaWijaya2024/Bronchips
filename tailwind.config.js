@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        superlobster: ['"Super Lobster"', 'cursive'], // Sesuaikan dengan nama font yang diimpor
+        superlobster: ['"Super Lobster"', 'cursive'],
+        bevietnam: ['"Be Vietnam Pro"', 'sans-serif'], 
       },
     },
   },
